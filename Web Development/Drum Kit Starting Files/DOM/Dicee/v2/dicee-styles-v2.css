@@ -1,0 +1,113 @@
+/* BASE STYLES */
+
+body {
+    background-color: #393E46;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 8rem;
+    text-shadow: 5px 0 #232931;
+}
+
+footer {
+    margin: 5rem 0 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION LEVEL STYLES */
+
+.heading-section {
+    margin-bottom: 5rem;
+}
+
+/* TITLE & ROW STYLES */
+
+.title-color {
+    color: #4ECCA3;
+}
+
+.dice-row-title {
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.dice-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dice-1 {
+    padding-right: 2rem;
+}
+
+/* BUTTON STYLES */
+
+.roll-btn {
+    margin-bottom: 5rem;
+    padding: 1rem 2rem 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: #4ECCA3;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: ease-in-out 300ms;
+}
+
+.roll-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.roll-btn:hover {
+    background-color: red;
+}
+
+.roll-btn:focus {
+    background-color: red;
+    border: solid white 1px;
+    transition: none;
+}
+
+/* MEDIA STYLES FOR PHONE */
+
+@media screen and (max-width: 576px) {
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    .heading-section {
+        margin-bottom: 3rem;
+    }
+    
+
+    .dice-row {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .dice-1 {
+        padding-right: unset;
+    }
+   
+}
